@@ -5,12 +5,19 @@
   padding: 0%;
 }
 
+.botonflotante{
+bottom: 10px;
+right: 10px;
+position: fixed;
+}
+
 /* Nav */
 
 .logo {
   width: 185px;
   height: 63px;
 }
+
 header {
   display: flex;
   align-items: center;
@@ -18,6 +25,7 @@ header {
   padding-left: 2rem;
   height: 90px;
   position: sticky;
+  z-index: 1;
   top: 0%;
   background: linear-gradient(
     90deg,
@@ -30,6 +38,7 @@ header {
   font-size: 1.25em;
   line-height: 29px;
   letter-spacing: 0.03em;
+  box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.1);
 }
 
 a:hover {
@@ -53,11 +62,13 @@ li {
 
 /*imagen y descripcion*/
 
-.display {
-  display: flex;
+.imagenportada{
+  /*height: calc(100vh - 90px);*/
+  max-height: 100%;
+  width: 100%;
 }
 
-.imagenloveislove {
+/*.imagenloveislove {
   max-width: 100%;
 }
 
@@ -87,18 +98,19 @@ h1 {
   font-style: italic;
   font-size: 30px;
   color: #5c5c5c;
-}
+}*/
 
 /*Main*/
 
 main {
   font-family: Montserrat;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 20px;
+  line-height: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 120px;
   padding-bottom: 84px;
 }
 
@@ -107,24 +119,52 @@ main {
   font-weight: normal;
   font-size: 32px;
   letter-spacing: 0.05em;
-  color: #185481;
+  color: #95D15D;
   width: 80%;
+}
+
+#tituloqueeslaesi{
+  text-align: right;
 }
 
 main p {
   width: 80%;
   padding-top: 45px;
-  padding-bottom: 90px;
+  padding-bottom: 120px;
+}
+
+.mainindex{
+  margin-left: 5rem;
+}
+
+.contenedorindex{
+  display: flex;
+ flex-direction: row;
+}
+
+.contenedorindex2{
+  display: flex;
+  flex-direction: row;
+}
+
+.contenedorimg{
+  width: 40%;
+  height: 40%;
 }
 
 .esiDerecho {
   font-weight: 600;
-  color: #1792b3;
+  color: #70BC7B;
+}
+
+.queeslaesi{
+text-align: right;
+padding-right: 0rem;
 }
 
 .brindarHerramientas {
   font-weight: 600;
-  color: #1792b3;
+  color: #70BC7B;
 }
 
 /*botones*/
@@ -140,15 +180,14 @@ main p {
   letter-spacing: 0.03em;
   color: #ffffff;
   cursor: pointer;
+  box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.2);
 }
 
 /*footer*/
 
 footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 160px;
+  padding: 2rem;
   background: linear-gradient(
     90deg,
     #1792b3 2.15%,
@@ -156,12 +195,31 @@ footer {
     #32d5a6 73.81%,
     #63d381 100%
   );
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #eff4f7;
 }
 
-footer span {
-  font-family: Montserrat;
-  font-size: 20px;
-  color: #eff4f7;
+.footer1{
+display: flex;
+flex-direction: column;
+justify-items: center;
+width: 40%;
+margin-left: 3rem;
+}
+
+.titulosdelfooter{
+  font-size: 16px;
+  line-height: 27px;
+  color: #414141;
+}
+
+.footer2{
+  width: 30%;
+}
+
+.footer3{
+  width: 30%;
 }
 
 /*SOBRE NOSOTROS--------------------------------------------------------------------*/
@@ -279,6 +337,23 @@ ol {
   grid-area: a7;
   background-color: #226fa8;
 }
+
+.seccioncartas{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 3rem;
+}
+
+.col-md-4{
+  margin: 0%;
+}
+
+.col-md-8{
+  margin: 0%;
+}
+
 /*REGALA ESI*/
 
 .completas {
