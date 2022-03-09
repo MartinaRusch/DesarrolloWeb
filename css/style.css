@@ -139,18 +139,16 @@ main p {
   padding-bottom: 120px;
 }
 
-.mainindex{
-  margin-left: 5rem;
-}
-
 .contenedorindex{
   display: flex;
  flex-direction: row;
+ padding-left: 5rem;
 }
 
 .contenedorindex2{
   display: flex;
   flex-direction: row;
+  padding-left: 6rem;
 }
 
 .contenedorimg{
@@ -360,6 +358,10 @@ width: 100%;
 
 /*REGALA ESI*/
 
+#carouselExampleIndicators{
+  z-index: 0;
+}
+
 .carousel-indicators{
   margin-bottom: -1rem;
 }
@@ -539,12 +541,20 @@ textarea {
     height: 45px;
   }
 
+  .tamañobotonflotante{
+    width: 40px;
+  }
+
   .display {
  display: none;
   }
 
   .display2{
     display: none;
+  }
+
+  .d-block{
+   display: none !important;
   }
 
   .portadacontacto{
