@@ -1,12 +1,9 @@
 /*index.html*/
 
+
 * {
   margin: 0%;
   padding: 0%;
-}
-
-#navbarToggleExternalContent{
-display: none;
 }
 
 .botonflotante{
@@ -16,6 +13,7 @@ position: fixed;
 }
 
 /* Nav manual */
+
 
 .logo {
   width: 185px;
@@ -64,6 +62,10 @@ li {
   padding: 0rem 2rem;
 }
 
+.navhamburguesa{
+  display: none;
+}
+
 /*NAV CON BOOSTRAP*/
 
 .bg-light {
@@ -73,7 +75,8 @@ li {
 .navbar-light 
 .navbar-toggler {
   border-color: transparent;
-  color:transparent
+  color:transparent;
+
 }
 
 .navbar-nav {
@@ -84,45 +87,20 @@ li {
   list-style: none;
 }
 
+.offcanvas-title{
+  visibility: hidden;
+}
+
+.navbar-brand{
+  visibility: hidden;
+}
+
 /*imagen y descripcion*/
 
 .imagenportada{
-  /*height: calc(100vh - 90px);*/
   max-height: 100%;
   width: 100%;
 }
-
-/*.imagenloveislove {
-  max-width: 100%;
-}
-
-.contenedorTituloHome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f2f2f2;
-}
-
-h1 {
-  width: 80%;
-  font-family: Bebas Neue;
-  font-weight: normal;
-  font-size: 50px;
-  line-height: 60px;
-  text-align: center;
-  color: #5c5c5c;
-}
-
-.tituloSinCulpa {
-  color: #63d381;
-}
-
-.tituloAutora {
-  font-family: Montserrat;
-  font-style: italic;
-  font-size: 30px;
-  color: #5c5c5c;
-}*/
 
 /*Main*/
 
@@ -224,26 +202,15 @@ footer {
   color: #eff4f7;
 }
 
-.footer1{
-display: flex;
-flex-direction: column;
-justify-items: center;
-width: 40%;
-margin-left: 3rem;
-}
-
 .titulosdelfooter{
   font-size: 16px;
   line-height: 27px;
   color: #414141;
+  padding-top: 1rem;
 }
 
-.footer2{
-  width: 30%;
-}
-
-.footer3{
-  width: 30%;
+.frase-footer{
+  margin-bottom: 0.5rem;
 }
 
 /*SOBRE NOSOTROS--------------------------------------------------------------------*/
@@ -317,6 +284,7 @@ ol div {
   margin-bottom: 10px;
   margin-left: 20px;
   grid-area: a1;
+  padding-top: 1rem;
 }
 
 .circulo2 {
@@ -327,6 +295,10 @@ ol div {
 .circulo3 {
   background: #fec01d;
   grid-area: a5;
+}
+
+.proponemos{
+  padding-bottom: 40px;
 }
 
 /*CURSO*/
@@ -370,7 +342,37 @@ ol {
   padding-top: 3rem;
 }
 
+.card-text{
+  padding-bottom: 30px;
+}
+
+.card-title{
+  font-family: Bebas Neue;
+}
+
+.imagencurso{
+width: 100%;
+}
+
 /*REGALA ESI*/
+
+.carousel-indicators{
+  margin-bottom: -1rem;
+  z-index: -1;
+}
+
+.carousel-indicators [data-bs-target] {
+
+  background-color: #226fa8;
+}
+
+.carousel-control-prev {
+  display: none;
+}
+
+.carousel-control-next {
+  display: none;
+}
 
 .completas {
   grid-area: a2;
@@ -409,13 +411,9 @@ ol {
   padding-top: 50px;
   width: 65%;
   height: 652px;
-  background: linear-gradient(
-    90deg,
-    #95d15d 32.75%,
-    #dbc632 69.6%,
-    rgba(254, 192, 29, 0.8) 100%
-  );
   border-radius: 20px;
+  border: 4px solid #95d15d;
+  box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.2);
 }
 
 .nombre-ingresa {
@@ -466,20 +464,33 @@ form .boton {
   grid-area: a11;
 }
 
+.botonenviar{
+  padding-top: 2rem;
+}
+
+.obligatorio{
+  padding: 2rem 0 0 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+
 label {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.05em;
-  color: #ffffff;
+  color: #5C5C5C;
 }
 
 input {
   background: #ffffff;
-  border-radius: 20px;
+  border-radius: 18px;
+  font-size: 16px;
   border: none;
   width: 70%;
   height: 50px;
   outline: none;
+  border: 3px solid #DBC632;
 }
 
 ::placeholder {
@@ -490,9 +501,30 @@ textarea {
   width: 85%;
   border-radius: 20px;
   border: none;
+  border: 3px solid #DBC632;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991px) {
+  
+  .navprincipal{
+    display: none;
+  }
+  
+  .navhamburguesa{
+    display: inline;
+  }
+  
+  .navbar-light .navbar-toggler{
+    padding-top: 1rem;
+    padding-right: 1rem;
+  }
+}
+  
+
+@media screen and (max-width: 700px) {
+
+/*NAV RESPONSIVE*/
+
   header {
     height: fit-content;
     padding-right: 0.5rem;
@@ -517,10 +549,30 @@ textarea {
 
   main {
     font-size: 14px;
+    padding-top: 20px;
+  }
+
+  .contenedorindex{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contenedorindex2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedorimg{
+   width: 60%;
   }
 
   .titulos {
     font-size: 18px;
+    padding-top: 60px;
+  }
+
+  .queeslaesi{
+    text-align: justify;
   }
 
   .boton {
@@ -538,12 +590,6 @@ textarea {
     font-size: 22px;
   }
 
-  .tituloAutora {
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-  }
-
   ol div {
     width: 30px;
     height: 30px;
@@ -551,7 +597,7 @@ textarea {
     margin-bottom: 10px;
   }
 
-  .numeroCirculo {
+  .circulo {
     font-size: 15px;
   }
 
@@ -562,6 +608,7 @@ textarea {
   .gridForm {
     display: flex;
     flex-direction: column;
+    padding-bottom: 2rem;
   }
 
   label {
@@ -580,4 +627,6 @@ textarea {
   .grid2 {
     grid-template-columns: 20% 80%;
   }
+
+
 }
