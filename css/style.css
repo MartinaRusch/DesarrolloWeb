@@ -12,6 +12,10 @@ right: 10px;
 position: fixed;
 }
 
+.mobile{
+  display: none;
+}
+
 /* Nav manual */
 
 
@@ -358,7 +362,6 @@ width: 100%;
 
 .carousel-indicators{
   margin-bottom: -1rem;
-  z-index: -1;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -523,6 +526,7 @@ textarea {
 
 @media screen and (max-width: 700px) {
 
+
 /*NAV RESPONSIVE*/
 
   header {
@@ -536,7 +540,19 @@ textarea {
   }
 
   .display {
-    flex-direction: column;
+ display: none;
+  }
+
+  .display2{
+    display: none;
+  }
+
+  .portadacontacto{
+    display: none;
+  }
+
+  .mobile{
+    display: inline;
   }
 
   li {
