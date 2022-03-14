@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    padding: 2rem;
+    background: $backgroundDegrade;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #eff4f7;
+
+    .titulosdelfooter{
+        font-size: 16px;
+        line-height: 27px;
+        color: #414141;
+        padding-top: 1rem;
+      }
+    .frase-footer{
+        margin-bottom: 0.5rem;
+      }
+
+  }

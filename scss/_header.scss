@@ -1,0 +1,78 @@
+
+  header {
+    a{
+      &:hover{
+        color: #1792b3;
+       }
+       text-decoration: none;
+       color: #ffffff;
+     }
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 3rem;
+    min-height: 90px;
+    position: sticky;
+    z-index: 1;
+    top: 0%;
+    background: $backgroundDegrade;
+    font-family: Bebas Neue;
+    font-size: 1.25em;
+    letter-spacing: 0.03em;
+    box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.1);
+
+    .logo {
+      width: 185px;
+      height: 63px;
+    }
+
+  }
+
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      padding: 0rem 2rem;
+    }
+    
+  }
+  
+  /*NAV HAMBURGUESA CON BOOSTRAP*/
+
+
+  .navhamburguesa{
+    display: none;
+  }
+  
+  
+  .bg-light {
+    --bs-bg-opacity: 0;
+  }
+  
+  .navbar-light 
+  .navbar-toggler {
+    border-color: transparent;
+    color:transparent;
+  
+  }
+  
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .offcanvas-title{
+    visibility: hidden;
+  }
+  
+  .navbar-brand{
+    visibility: hidden;
+  }

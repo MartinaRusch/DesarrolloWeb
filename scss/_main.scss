@@ -1,0 +1,81 @@
+
+main {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 84px;
+
+    .titulos {
+      font-family: Bebas Neue;
+      font-weight: normal;
+      font-size: 32px;
+      letter-spacing: 0.05em;
+      color: $colorTitulosMain;
+      width: 80%;
+      }
+      
+    #tituloqueeslaesi{
+        text-align: right;
+      }
+
+    .contenedorindex{
+        display: flex;
+       flex-direction: row;
+       padding-left: 5rem;
+      }
+      
+    .contenedorindex2{
+        display: flex;
+        flex-direction: row;
+        padding-left: 6rem;
+      }
+    .contenedorimg{
+        width: 40%;
+        height: 40%;
+      }
+      
+    .esiDerecho {
+        font-weight: 600;
+        color: #70BC7B;
+      }
+      
+    .queeslaesi{
+      text-align: right;
+      padding-right: 0rem;
+      }
+      
+    .brindarHerramientas {
+        font-weight: 600;
+        color: #70BC7B;
+      }
+
+.boton {
+    width: 200px;
+    height: 60px;
+    background: #95d15d;
+    border: none;
+    border-radius: 15px;
+    font-family: Bebas Neue;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.2);
+  }
+   
+     }
+  
+  
+  main p {
+    width: 80%;
+    padding-top: 45px;
+    padding-bottom: 120px;
+  }
+  
+/*este main p está por fuera ya que afecta a los main de TODAS las páginas*/
+  
