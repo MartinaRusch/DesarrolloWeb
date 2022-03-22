@@ -1,0 +1,148 @@
+@media screen and (max-width: 991px) {
+  
+    .navprincipal{
+      display: none;
+    }
+    
+    .navhamburguesa{
+      display: inline;
+    }
+    
+    .navbar-light .navbar-toggler{
+      padding-top: 1rem;
+      padding-right: 1rem;
+    }
+  }
+    
+  
+  @media screen and (max-width: 700px) {
+
+    .mobile{
+      display: inline !important;
+      }
+    .display {
+      display: none;
+      }
+      .display2{
+      display: none;
+      }
+      .portadacontacto{
+      display: none;
+      }
+
+  
+
+  .tamañobotonflotante{
+    width: 40px;
+  }
+  
+    header {
+      height: fit-content;
+      padding-right: 0.5rem;
+      .logo {
+        width: 133px;
+        height: 45px;
+      }
+    }
+    
+    main {
+        font-size: 14px;
+        padding-top: 20px; 
+
+        p{
+          padding-bottom: 0%;
+        }
+
+        .titulos {
+            font-size: 18px;
+            padding-top: 60px;
+          }
+
+        .formatoimagen {
+          width: 100%;
+        }
+
+        h1 {
+          font-size: 22px;
+        }
+
+        li {
+            padding: 0rem 1rem;
+        }
+        
+
+        .contenedorindex{
+            display: flex;
+            flex-direction: column-reverse;
+          }
+        
+          .contenedorindex2{
+            display: flex;
+            flex-direction: column;
+          }
+        
+          .contenedorimg{
+           width: 60%;
+          }
+        
+          .queeslaesi{
+            text-align: justify;
+          }
+          
+.grid{
+
+      div {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+
+        &__p {
+          padding-bottom: 45px;
+        }
+      }
+    }
+
+     .boton {
+      width: 145px;
+      height: 35px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+  
+  
+
+  
+    footer span {
+      font-size: 16px;
+    }
+  
+  
+    .gridForm {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 2rem;
+      border: 2px solid $colorTitulosMain;
+      box-shadow: none;
+      justify-content: center;
+      
+        label {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+        .nombre-ingresa {
+            margin-top: 0%;
+        }
+        
+        .grid {
+            grid-template-columns: 20% 80%;
+        }
+        
+        .grid2 {
+            grid-template-columns: 20% 80%;
+        }
+    }
+  }
+}
+  
