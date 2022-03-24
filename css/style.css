@@ -154,7 +154,7 @@ main .proponemos {
 main .grid {
   width: 90%;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 10% 90%;
   grid-template-areas: "a1 a2" "a3 a4" "a5 a6";
   list-style-type: none; }
   main .grid div {
@@ -174,7 +174,8 @@ main .grid {
     margin: 0%;
     display: flex;
     flex-direction: row;
-    align-items: center; }
+    align-items: center;
+    margin-left: 20px; }
   main .grid .circulo2 {
     background: #95d15d;
     grid-area: a3; }
