@@ -11,25 +11,4 @@
   width: 100%;
   }
 
-/*REGALA ESI*/
-
-#carouselExampleIndicators{
-  z-index: 0;
-  .carousel-indicators{
-    margin-bottom: -1rem;
-  }
-  
-  .carousel-indicators [data-bs-target] {
-  
-    background-color: #226fa8;
-  }
-  
-  .carousel-control-prev {
-    display: none;
-  }
-  
-  .carousel-control-next {
-    display: none;
-  }
-}
 

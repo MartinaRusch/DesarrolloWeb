@@ -73,18 +73,7 @@ ul {
 .imagencurso {
   width: 100%; }
 
-/*REGALA ESI*/
-#carouselExampleIndicators {
-  z-index: 0; }
-  #carouselExampleIndicators .carousel-indicators {
-    margin-bottom: -1rem; }
-  #carouselExampleIndicators .carousel-indicators [data-bs-target] {
-    background-color: #226fa8; }
-  #carouselExampleIndicators .carousel-control-prev {
-    display: none; }
-  #carouselExampleIndicators .carousel-control-next {
-    display: none; }
-
+/* 
 main {
   font-family: Montserrat;
   font-weight: 500;
@@ -94,36 +83,117 @@ main {
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
-  padding-bottom: 84px; }
+  padding-bottom: 84px;
+
+  .titulos {
+    font-family: Bebas Neue;
+    font-weight: normal;
+    font-size: 32px;
+    letter-spacing: 0.05em;
+    color: $colorTitulosMain;
+    width: 80%;
+    }
+    
+  #tituloqueeslaesi{
+      text-align: right;
+    }
+
+  .contenedorindex{
+      display: flex;
+     flex-direction: row;
+     padding-left: 5rem;
+    }
+    
+  .contenedorindex2{
+      display: flex;
+      flex-direction: row;
+      padding-left: 6rem;
+    }
+  .contenedorimg{
+      width: 40%;
+      height: 40%;
+    }
+    
+  .esiDerecho {
+      font-weight: 600;
+      color: #70BC7B;
+    }
+    
+  .queeslaesi{
+    text-align: right;
+    padding-right: 0rem;
+    }
+    
+  .brindarHerramientas {
+      font-weight: 600;
+      color: #70BC7B;
+    }
+
+.boton {
+  width: 200px;
+  height: 60px;
+  background: #95d15d;
+  border: none;
+  border-radius: 15px;
+  font-family: Bebas Neue;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.2);
+}
+}
+
+main p {
+  width: 80%;
+  padding-top: 45px;
+  padding-bottom: 60px;
+} */
+main {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 4rem 2rem 4rem; }
   main .titulos {
     font-family: Bebas Neue;
     font-weight: normal;
     font-size: 32px;
     letter-spacing: 0.05em;
     color: #95D15D;
-    width: 80%; }
-  main #tituloqueeslaesi {
-    text-align: right; }
-  main .contenedorindex {
-    display: flex;
-    flex-direction: row;
-    padding-left: 5rem; }
-  main .contenedorindex2 {
-    display: flex;
-    flex-direction: row;
-    padding-left: 6rem; }
+    padding-bottom: 2rem; }
   main .contenedorimg {
     width: 40%;
     height: 40%; }
-  main .esiDerecho {
-    font-weight: 600;
-    color: #70BC7B; }
-  main .queeslaesi {
-    text-align: right;
-    padding-right: 0rem; }
-  main .brindarHerramientas {
-    font-weight: 600;
-    color: #70BC7B; }
+  main .ilustracionuno {
+    margin-right: 2rem; }
+  main .ilustraciondos {
+    margin-left: 2rem; }
+  main .seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 6rem; }
+    main .seccion #tituloqueeslaesi {
+      text-align: right; }
+    main .seccion .textoindex {
+      display: flex;
+      flex-direction: column;
+      width: 60%; }
+    main .seccion .esiDerecho {
+      font-weight: 600;
+      color: #70BC7B; }
+    main .seccion .queeslaesi {
+      text-align: right; }
+    main .seccion .brindarHerramientas {
+      font-weight: 600;
+      color: #70BC7B; }
   main .boton {
     width: 200px;
     height: 60px;
@@ -137,13 +207,14 @@ main {
     cursor: pointer;
     box-shadow: 4px 5px 5px 1px rgba(0, 0, 0, 0.2); }
 
-main p {
-  width: 80%;
-  padding-top: 45px;
-  padding-bottom: 60px; }
-
 /*este main p está por fuera ya que afecta a los main de TODAS las páginas*/
 /*SOBRE NOSOTROS*/
+main .paddingtop {
+  padding-top: 2rem; }
+
+main .paddingbottom {
+  padding-bottom: 4rem; }
+
 main .quienesSomos {
   font-weight: 600;
   color: #1792b3; }
@@ -219,7 +290,7 @@ main .grid {
 /*REGALA ESI*/
 .carousel {
   width: 80%;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 3rem; }
 
 .carousel-item {
@@ -229,76 +300,78 @@ main .grid {
   padding-top: 2rem; }
 
 /*CONTACTO---------------------------------------------------------------------------*/
-.gridForm {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50px 60px 80px 60px 80px 220px;
-  grid-template-areas: "a1 a2" "a3 a4" "a5 a6" "a7 a8" "a9 a9" "a10 a10" "a11 a11";
-  padding-left: 80px;
-  padding-top: 50px;
-  width: 65%;
-  height: 652px;
-  border-radius: 20px;
-  border: 4px solid #95d15d;
-  box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.2); }
-  .gridForm .lineasInput {
-    border: none;
-    border-radius: 0px;
-    border-bottom: 2px solid #DBC632; }
-  .gridForm .nombre-ingresa {
-    grid-area: a1;
-    padding-right: 80px; }
-  .gridForm .nombre-ingresa2 {
-    grid-area: a3;
-    padding-left: 1rem; }
-  .gridForm .apellido-ingresa {
-    grid-area: a2; }
-  .gridForm .apellido-ingresa2 {
-    grid-area: a4;
-    padding-left: 1rem; }
-  .gridForm .email-ingresa {
-    grid-area: a5;
-    margin-top: 25px; }
-  .gridForm .email-ingresa2 {
-    grid-area: a7;
-    padding-left: 1rem; }
-  .gridForm .celular-ingresa {
-    grid-area: a6;
-    margin-top: 25px; }
-  .gridForm .celular-ingresa2 {
-    grid-area: a8;
-    padding-left: 1rem; }
-  .gridForm .mensaje-ingresa {
-    grid-area: a9;
-    margin-top: 25px; }
-  .gridForm .mensaje-ingresa2 {
-    grid-area: a10;
-    padding-left: 1rem;
-    padding-top: 1rem;
-    font-size: 16px; }
-  .gridForm form .boton {
-    grid-area: a11; }
-  .gridForm label {
-    font-size: 18px;
-    line-height: 27px;
-    letter-spacing: 0.05em;
-    color: #5C5C5C; }
-  .gridForm input {
-    background: #ffffff;
-    border-radius: 18px;
-    font-size: 16px;
-    border: none;
-    width: 70%;
-    height: 50px;
-    outline: none;
-    border: 3px solid #DBC632; }
-    .gridForm input ::placeholder {
-      padding-left: 15px; }
-  .gridForm textarea {
-    width: 85%;
+main {
+  flex-direction: column; }
+  main .gridForm {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 60px 80px 60px 80px 220px;
+    grid-template-areas: "a1 a2" "a3 a4" "a5 a6" "a7 a8" "a9 a9" "a10 a10" "a11 a11";
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 65%;
+    height: 652px;
     border-radius: 20px;
-    border: none;
-    border: 3px solid #DBC632; }
+    border: 4px solid #95d15d;
+    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.2); }
+    main .gridForm .lineasInput {
+      border: none;
+      border-radius: 0px;
+      border-bottom: 2px solid #DBC632; }
+    main .gridForm .nombre-ingresa {
+      grid-area: a1;
+      padding-right: 80px; }
+    main .gridForm .nombre-ingresa2 {
+      grid-area: a3;
+      padding-left: 1rem; }
+    main .gridForm .apellido-ingresa {
+      grid-area: a2; }
+    main .gridForm .apellido-ingresa2 {
+      grid-area: a4;
+      padding-left: 1rem; }
+    main .gridForm .email-ingresa {
+      grid-area: a5;
+      margin-top: 25px; }
+    main .gridForm .email-ingresa2 {
+      grid-area: a7;
+      padding-left: 1rem; }
+    main .gridForm .celular-ingresa {
+      grid-area: a6;
+      margin-top: 25px; }
+    main .gridForm .celular-ingresa2 {
+      grid-area: a8;
+      padding-left: 1rem; }
+    main .gridForm .mensaje-ingresa {
+      grid-area: a9;
+      margin-top: 25px; }
+    main .gridForm .mensaje-ingresa2 {
+      grid-area: a10;
+      padding-left: 1rem;
+      padding-top: 1rem;
+      font-size: 16px; }
+    main .gridForm form .boton {
+      grid-area: a11; }
+    main .gridForm label {
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: 0.05em;
+      color: #5C5C5C; }
+    main .gridForm input {
+      background: #ffffff;
+      border-radius: 18px;
+      font-size: 16px;
+      border: none;
+      width: 70%;
+      height: 50px;
+      outline: none;
+      border: 3px solid #DBC632; }
+      main .gridForm input ::placeholder {
+        padding-left: 15px; }
+    main .gridForm textarea {
+      width: 85%;
+      border-radius: 20px;
+      border: none;
+      border: 3px solid #DBC632; }
 
 .botonenviar {
   padding-top: 2rem; }
@@ -330,9 +403,13 @@ footer {
     display: inline; }
   .navbar-light .navbar-toggler {
     padding-top: 1rem;
-    padding-right: 1rem; } }
+    padding-right: 1rem; }
+  main {
+    font-size: 18px; }
+    main .titulos {
+      font-size: 28px; } }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
   .mobile {
     display: inline !important; }
   .display {
@@ -350,36 +427,43 @@ footer {
       width: 133px;
       height: 45px; }
   main {
-    font-size: 14px;
-    padding-top: 20px; }
-    main p {
-      padding-bottom: 0%; }
-    main .titulos {
-      font-size: 18px;
-      padding-top: 60px; }
-    main .formatoimagen {
-      width: 100%; }
-    main h1 {
-      font-size: 22px; }
-    main li {
-      padding: 0rem 1rem; }
-    main .contenedorindex {
-      display: flex;
-      flex-direction: column-reverse; }
-    main .contenedorindex2 {
+    font-size: 16px;
+    padding: 1rem 2rem 2rem 2rem;
+    text-align: justify; }
+    main .seccion {
       display: flex;
       flex-direction: column; }
+      main .seccion .queeslaesi {
+        text-align: justify; }
+      main .seccion #tituloqueeslaesi {
+        text-align: center; }
+      main .seccion .importancia {
+        text-align: justify; }
+    main .textoindex {
+      width: 85%; }
+    main .titulos {
+      font-size: 22px;
+      text-align: center; }
+    main .formatoimagen {
+      width: 100%; }
     main .contenedorimg {
-      width: 60%; }
-    main .queeslaesi {
-      text-align: justify; }
-    main .grid div {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-bottom: 10px; }
-      main .grid div__p {
-        padding-bottom: 45px; }
+      width: 60%;
+      align-self: center;
+      padding-bottom: 2rem; }
+    main .botonesdemain {
+      padding-bottom: 2rem; }
+    main .sectioncard
+.card-header-title {
+      font-size: 18px; }
+    main .grid {
+      grid-template-columns: none; }
+      main .grid div {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-bottom: 10px; }
+        main .grid div__p {
+          padding-bottom: 45px; }
     main .boton {
       width: 145px;
       height: 35px;
@@ -393,7 +477,10 @@ footer {
       padding-bottom: 2rem;
       border: 2px solid #95D15D;
       box-shadow: none;
-      justify-content: center; }
+      justify-content: center;
+      padding-left: 2rem;
+      padding-top: 2rem;
+      width: 100%; }
       main .gridForm label {
         font-size: 16px;
         margin-top: 20px; }
@@ -403,6 +490,12 @@ footer {
         grid-template-columns: 20% 80%; }
       main .gridForm .grid2 {
         grid-template-columns: 20% 80%; } }
+
+@media screen and (max-width: 400px) {
+  main {
+    font-size: 14px; }
+    main .titulos {
+      font-size: 18px; } }
 
 * {
   margin: 0%;
