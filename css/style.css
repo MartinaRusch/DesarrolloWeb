@@ -73,6 +73,18 @@ ul {
 .imagencurso {
   width: 100%; }
 
+.botonbajar {
+  position: relative;
+  top: -200px;
+  left: 48vw;
+  z-index: 0; }
+
+.botonbajar2 {
+  top: -25px; }
+
+.botonbajar3 {
+  top: -40px; }
+
 /* 
 main {
   font-family: Montserrat;
@@ -207,7 +219,6 @@ main {
     cursor: pointer;
     box-shadow: 4px 5px 5px 1px rgba(0, 0, 0, 0.2); }
 
-/*este main p está por fuera ya que afecta a los main de TODAS las páginas*/
 /*SOBRE NOSOTROS*/
 main .paddingtop {
   padding-top: 2rem; }
@@ -289,7 +300,7 @@ main .grid {
 
 /*REGALA ESI*/
 .carousel {
-  width: 80%;
+  width: 90%;
   padding-top: 1rem;
   padding-bottom: 3rem; }
 
@@ -407,9 +418,14 @@ footer {
   main {
     font-size: 18px; }
     main .titulos {
-      font-size: 28px; } }
+      font-size: 26px; }
+    main .seccion .titulos {
+      font-size: 26px; }
+    main .seccion .contenedorimg {
+      width: 60%;
+      height: 60%; } }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
   .mobile {
     display: inline !important; }
   .display {
@@ -428,28 +444,33 @@ footer {
       height: 45px; }
   main {
     font-size: 16px;
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 3rem 2rem 2rem 2rem;
     text-align: justify; }
+    main .titulos {
+      font-size: 22px; }
     main .seccion {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      padding-bottom: 3rem; }
+      main .seccion .titulos {
+        font-size: 22px; }
+      main .seccion .contenedorimg {
+        width: 70%;
+        align-self: center;
+        padding-bottom: 2rem; }
+      main .seccion .ilustracionuno {
+        margin-right: 0px; }
       main .seccion .queeslaesi {
         text-align: justify; }
       main .seccion #tituloqueeslaesi {
-        text-align: center; }
+        text-align: left; }
       main .seccion .importancia {
         text-align: justify; }
-    main .textoindex {
-      width: 85%; }
-    main .titulos {
-      font-size: 22px;
-      text-align: center; }
-    main .formatoimagen {
-      width: 100%; }
-    main .contenedorimg {
-      width: 60%;
-      align-self: center;
-      padding-bottom: 2rem; }
+      main .seccion .textoindex {
+        width: 100%; }
+    main .seccionespecial {
+      display: flex;
+      flex-direction: column-reverse; }
     main .botonesdemain {
       padding-bottom: 2rem; }
     main .sectioncard
@@ -489,12 +510,26 @@ footer {
       main .gridForm .grid {
         grid-template-columns: 20% 80%; }
       main .gridForm .grid2 {
-        grid-template-columns: 20% 80%; } }
+        grid-template-columns: 20% 80%; }
+  ol {
+    padding-left: 0px; } }
 
 @media screen and (max-width: 400px) {
   main {
     font-size: 14px; }
     main .titulos {
+      font-size: 18px; }
+    main .paddingbottom {
+      padding-bottom: 2rem; }
+    main .grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .grid .contenedorli {
+        padding-bottom: 2rem; }
+    main .carousel {
+      width: 100%; }
+    main .seccion .titulos {
       font-size: 18px; } }
 
 * {

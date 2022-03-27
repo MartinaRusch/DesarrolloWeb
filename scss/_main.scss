@@ -115,6 +115,7 @@ main p {
       justify-content: space-evenly;
       align-items: center;
       padding-bottom: 6rem;
+
       
         #tituloqueeslaesi{
           text-align: right;
@@ -155,8 +156,6 @@ main p {
     }
 }
   
-  
-/*este main p está por fuera ya que afecta a los main de TODAS las páginas*/
   
 /*SOBRE NOSOTROS*/
 
@@ -280,7 +279,7 @@ margin-top: 4rem;
 /*REGALA ESI*/
 
 .carousel{
-  width: 80%;
+  width: 90%;
   padding-top: 1rem;
   padding-bottom: 3rem;
 }

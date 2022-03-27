@@ -17,16 +17,26 @@
     font-size: 18px;
 
     .titulos {
-      font-size: 28px;
-    }
+      font-size: 26px;
+     }
 
+    .seccion{
+
+    .titulos {
+      font-size: 26px;
+    }
+    .contenedorimg{
+      width: 60%;
+      height: 60%;
+    }
   }
+ }
 }
 
 
   
   
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 800px) {
 
     .mobile{
       display: inline !important;
@@ -56,44 +66,54 @@
     
     main {
         font-size: 16px;
-        padding: 1rem 2rem 2rem 2rem;
+        padding: 3rem 2rem 2rem 2rem;
         text-align: justify;
+
+        .titulos {
+          font-size: 22px;
+         }
 
         .seccion{
         display: flex;
         flex-direction: column;
+        padding-bottom: 3rem;
 
+        .titulos {
+          font-size: 22px;
+        }
+
+        .contenedorimg{
+          width: 70%;
+          align-self: center;
+          padding-bottom: 2rem;
+         }
+
+         .ilustracionuno{
+           margin-right: 0px;
+         }
+         
         .queeslaesi{
           text-align: justify;
         }
 
-        #tituloqueeslaesi{
-        text-align: center;
+         #tituloqueeslaesi {
+        text-align: left;
         }
+
 
         .importancia{
           text-align: justify;
         }
-      }
 
-          .textoindex{
-            width: 85%;
-        }
-
-        .titulos {
-            font-size: 22px;
-            text-align: center;
-          }
-
-        .formatoimagen {
+        .textoindex{
           width: 100%;
-        }  
-        
-          .contenedorimg{
-           width: 60%;
-           align-self: center;
-           padding-bottom: 2rem;
-          }
+      }
+    }
+
+    .seccionespecial{
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
         .botonesdemain{
           padding-bottom: 2rem;
@@ -162,6 +182,9 @@
         }
     }
   }
+  ol{
+    padding-left: 0px;
+  }
 }
   
 @media screen and (max-width: 400px) {
@@ -171,7 +194,31 @@
 
     .titulos {
       font-size: 18px;
+     }
+
+    .paddingbottom{
+      padding-bottom: 2rem;
     }
 
-  }
+    .grid{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .contenedorli{
+        padding-bottom: 2rem;
+      }
+    }
+
+    .carousel{
+      width: 100%;
+    }
+
+    .seccion{
+
+    .titulos {
+      font-size: 18px;
+     }
+   }
+ }
 }
