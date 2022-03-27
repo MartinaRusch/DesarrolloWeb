@@ -73,17 +73,17 @@ ul {
 .imagencurso {
   width: 100%; }
 
-.botonbajar {
+.botonbajar2 {
   position: relative;
-  top: -200px;
+  top: -40px;
   left: 48vw;
   z-index: 0; }
 
-.botonbajar2 {
-  top: -25px; }
+.botonbajar {
+  top: -220px; }
 
 .botonbajar3 {
-  top: -40px; }
+  top: -60px; }
 
 /* 
 main {
@@ -430,8 +430,6 @@ footer {
     display: inline !important; }
   .display {
     display: none; }
-  .display2 {
-    display: none; }
   .portadacontacto {
     display: none; }
   .tamañobotonflotante {
@@ -521,12 +519,16 @@ footer {
       font-size: 18px; }
     main .paddingbottom {
       padding-bottom: 2rem; }
+    main .paddingtop {
+      padding-top: 0%; }
     main .grid {
       display: flex;
       flex-direction: column;
       align-items: center; }
       main .grid .contenedorli {
         padding-bottom: 2rem; }
+    main .sectioncard .espacio {
+      padding-left: 0px; }
     main .carousel {
       width: 100%; }
     main .seccion .titulos {

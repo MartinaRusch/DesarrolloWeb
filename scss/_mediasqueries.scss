@@ -44,9 +44,6 @@
     .display {
       display: none;
       }
-      .display2{
-      display: none;
-      }
       .portadacontacto{
       display: none;
       }
@@ -200,6 +197,10 @@
       padding-bottom: 2rem;
     }
 
+    .paddingtop{
+      padding-top: 0%;
+    }
+
     .grid{
       display: flex;
       flex-direction: column;
@@ -207,6 +208,12 @@
 
       .contenedorli{
         padding-bottom: 2rem;
+      }
+    }
+
+    .sectioncard{
+      .espacio{
+        padding-left: 0px;
       }
     }
 
